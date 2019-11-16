@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 function render() {
     if (!isset($_SESSION['messages'])) {
         return null;
@@ -24,7 +24,7 @@ if (isset($_POST['username'])&&isset($_POST['password'])) {
     }
 }
     
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
