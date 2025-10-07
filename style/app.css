@@ -1,0 +1,206 @@
+input.form-control {
+    border : 0px solid !important;
+    border-bottom : 1px solid !important;
+    border-color: #D2D6DE !important;
+}
+
+input.form-control:focus {
+    border-color: #00A65A !important;
+    box-shadow: none !important;
+}
+
+textarea.form-control:focus {
+    border-color: #00A65A !important;
+    box-shadow: none !important;
+}
+
+button.tampil-button{
+    border-radius: 10px;
+    height: 33px;
+}
+
+li.user-footer a {
+    border-radius: 15px !important;
+    height: 25px;
+    display: inline-flex; /* Use inline-flex to keep them inline */
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+
+.login-body {
+    background-color: #f0f0f0; /* Light background */
+    color: #333; /* Dark text color */
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-box {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    flex: 1;
+    background-color: #fff; /* White form background */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.header h2 {
+    margin-bottom: 5px;
+}
+
+.header p a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field,
+.form-select {
+    background-color: #f9f9f9; /* Light input background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    color: #333;
+    width: 100%; /* Make them fill the parent container */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.form-select {
+    width:100%;
+    text-align: center;
+    height : 40px;
+}
+
+.form-select option {
+    background-color: #fff;
+}
+
+.form-select:focus,
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.password-input {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.password-toggle {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.password{
+    width: 100%;
+    position: relative;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background-color: #007bff; /* Blue button */
+    border: none;
+    border-radius: 5px;
+    padding: 12px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* ... your existing CSS ... */
+
+@media (max-width: 480px) {
+    .login-box {
+        flex-direction: column;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .input-field,
+    .form-select,
+    .submit-btn {
+        width: 100%;
+    }
+
+    .form-select {
+         width: 100%;
+    }
+
+    .input-field,
+    .form-select,
+    .submit-btn {
+        width: calc(100% - 35px);
+        box-sizing: border-box;
+    }
+
+    .form-select {
+        width: calc(100% - 35px);
+    }
+
+    .password-toggle {
+        position: absolute;
+        top: 12px;
+        right: 45px;
+        cursor: pointer;
+    }
+}
