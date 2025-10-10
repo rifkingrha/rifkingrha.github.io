@@ -270,3 +270,15 @@ const animationTimeline = () => {
         tl.restart();
     });
 }
+
+
+    document.getElementById('message-button').addEventListener('click', function() {
+        console.log('test message')
+        console.log('meassebly consortion')
+        Swal.fire({
+            title: 'abc',
+            width: 600,
+            padding: '3em',
+            color: '#716add'
+        });
+    });
