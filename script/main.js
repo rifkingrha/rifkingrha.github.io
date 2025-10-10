@@ -276,6 +276,11 @@ const animationTimeline = () => {
     replyBtn.addEventListener("click", () => {
         tl.restart();
     });
+
+    const restartBtn = document.getElementById("restart");
+    restartBtn.addEventListener("click", () => {
+        window.location.replace('index.html');
+    });
 }
 
 
