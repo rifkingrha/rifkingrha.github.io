@@ -1,21 +1,28 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Do you want to play music in the background?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.querySelector('.song').play();
-            animationTimeline();
-        } else {
-            animationTimeline();
-        }
-    });
+        title: 'Oops! Something went wrong',
+        text: "redirecting to the right page",
+        icon: 'error'
+    }).then(()=>{
+        Swal.fire({
+            title: 'Do you want to play music in the background?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.querySelector('.song').play();
+                animationTimeline();
+            } else {
+                animationTimeline();
+            }
+        });
+
+    })
 });
 
 
@@ -272,13 +279,13 @@ const animationTimeline = () => {
 }
 
 
-    document.getElementById('message-button').addEventListener('click', function() {
-        console.log('test message')
-        console.log('meassebly consortion')
-        Swal.fire({
-            title: 'abc',
-            width: 600,
-            padding: '3em',
-            color: '#716add'
-        });
-    });
+    // document.getElementById('message-button').addEventListener('click', function() {
+    //     console.log('test message')
+    //     console.log('meassebly consortion')
+    //     Swal.fire({
+    //         title: 'abc',
+    //         width: 600,
+    //         padding: '3em',
+    //         color: '#716add'
+    //     });
+    // });
